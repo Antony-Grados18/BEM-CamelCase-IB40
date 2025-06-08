@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+ <html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😁👍Normas de BEM y camelCase😎</title>
+    <link rel="stylesheet" href="estilos.css/estilos.css">
+  </head>
+
+        <header class="header">
+            <h1 class="titulo-con-logo">
+                <img src="imagi/logo1.png" alt="Logo personal" class="logo-personal">
+               🔎¿Qué función tienen las normas BEM y CamelCase?💡
+               <img src="imagi/logo_argentina.png" alt="Logo instituto" class="logo-instituto">
+            </h1>
+               <p class="section__text">Una guía informativa y práctica sobre metodologías de nomenclatura</p>
+ </header>
+
+     <main class="main">
+            <!-- Introducción -->
+              <section class="section section--intro">
+                <h2 class="section__title">Introducción</h2>
+                 <p class="section__text">
+                  Esta página tiene el propósito de explicar y demostrar el uso de BEM y camelCase en proyectos de desarrollo web.
+                </p>
+    </section>
+
+    <!-- BEM -->
+    <section class="section section--bem">
+      <h2 class="section__title">¿Qué es BEM?</h2>
+      <p class="section__text">
+        Las normas BEM (Block, Element, Modifier) son una metodología para nombrar clases en CSS que promueve la modularidad, reutilización y mantenibilidad del código. Permiten organizar las clases en bloques, elementos y modificadores, facilitando la identificación de la relación entre los estilos y el código HTML. 
+        Componentes BEM:
+
+        (Bloque, Elemento, Modificador) es una metodología para nombrar clases en CSS que facilita la escritura de código más limpio, modular y reutilizable.
+      </p>
+
+      <h3 class="section__subtitle">Ventajas del BEM</h3>
+      <ol class="section__list">
+        <li><strong>Mayor legibilidad y mantenibilidad del código</strong>,Los nombres de clase BEM son descriptivos y facilitan la comprensión de la estructura del código.</li>
+        <li><strong>Facilita el trabajo en equipo</strong>, la metodología BEM facilita la colaboración entre desarrolladores al establecer una convención de nomenclatura clara. </li>
+        <li><strong>Evita conflictos de nombres</strong>, la estructura BEM evita conflictos de estilos al utilizar nombres de clase únicos para cada componente.</li>
+        <li><strong>Mejora la reutilización de componentes</strong>, los bloques pueden ser reutilizados en diferentes partes del sitio web, lo que reduce la duplicación de código.</li>
+      </ol>
+
+      <h3 class="section__subtitle">Ejemplos BEM</h3>
+      <ul class="section__list section__list--code">
+        <li><code>.boton</code> (bloque)</li>
+        <li><code>.boton__icono</code> (elemento)</li>
+        <li><code>.boton--primario</code> (modificador)</li>
+      </ul>
+    </section>
+
+    <!-- camelCase -->
+    <section class="section section--camelCase">
+      <h2 class="section__title">¿Qué es camelCase?</h2>
+      <p class="section__text">
+       CamelCase es una forma de separar las palabras de una frase, escribiendo la primera letra de cada palabra en mayúscula y sin espacios. Se usa comúnmente en <strong>URL/web</strong>, programación y convenciones de nomenclatura informática. Recibe su nombre de los camellos, ya que las mayúsculas se asemejan a las jorobas de su lomo.
+      </p>
+
+      <h3 class="section__subtitle">¿Dónde se usa camelCase?</h3> 
+      <P class="section__Ttext">CamelCase, una convención de nomenclatura, se utiliza principalmente en programación, especialmente para nombrar variables, funciones y clases, donde se unen palabras sin espacios, pero la primera letra de cada palabra (excepto la primera) se escribe en mayúscula. Esta forma de escribir permite que las palabras sean fáciles de leer y distingue las diferentes partes de un nombre complejo. </P>
+      <ol class="section__list">
+        <li><strong>En nombres de variables en JavaScript.</strong></li>
+        <li><strong>En nombres de funciones,</strong></li>
+        <li><strong>En propiedades de objetos.</strong></li>
+      </ol>
+
+      <h3 class="section__subtitle">Ejemplos de camelCase</h3>
+      <ul class="section__list section__list--code">
+        <li><code>miVariable</code></li>
+        <li><code>calcularSuma</code></li>
+        <li><code>usuario.nombreCompleto</code></li>
+      </ul>
+    </section>
+
+    <!-- Comparación -->
+    <section class="section section--comparacion">
+      <h2 class="section__title">Comparación entre normas BEM y camelCase</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Características</th>
+            <th>BEM</th>
+            <th>camelCase</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ámbitos</td>
+            <td>CSS / HTML</td>
+            <td>JavaScript</td>
+          </tr>
+          <tr>
+            <td>Usos</td>
+            <td>Clases para estilos</td>
+            <td>Variables y funciones</td>
+          </tr>
+          <tr>
+            <td>Legibilidad</td>
+            <td>Alta con estructura clara</td>
+            <td>Alta en programación</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="section__text">
+        Usa BEM para estructurar estilos en CSS y camelCase para variables y funciones en JavaScript.
+      </p>
+    </section>
+     <!-- Práctica -->
+    <section class="section section--practica1">
+      <h2 class="section__title">Buenas prácticas con BEM</h2>
+      <ol class="section__list">
+          <li><strong>Nunca uses IDs para estilo; usa clases BEM.</strong></li>
+          <li><strong>Evita anidar más de 2 niveles.</strong></li>
+          <li><strong>Reutiliza bloques cuando puedas.</strong></li>
+          <li><strong>Usa modificadores para cambios de estado (activo, desactivado, etc).</strong></li>
+      </ol>
+      <section class="section--practica2">
+        <h2 class="section__title">Buenas prácticas al aplicar camelCase</h2>
+        <ol class="section__list">
+          <li><strong>Sé descriptivo:</strong>cantidadTotal, no ctdT.</li>
+          <li><strong>Evita guiones bajos</strong> (_): eso es snake_case.</li>
+          <li><strong>Mantén consistencia:</strong> No mezcles nombre_usuario y nombreUsuario en el mismo archivo.</li>
+          <li><strong>Para funciones, usa verbos: </strong>crearUsuario(), actualizarPerfil().</li>
+      </ol>
+      </section>
+      
+      </section>
+     
+          <section class="seccion__subtitulo">
+             <h3 class="section__tarjeta"> Codigo HTML de la tarjeta usando BEM </h3>
+       <pre class="cuadro_ejemplo1">
+        <code >&lt;div class="tarjeta"&gt;
+              &lt;h2 class="tarjeta__titulo"&gt;Título de la Tarjeta&lt;/h2&gt;
+              &lt;p class="tarjeta__texto"&gt;Este es un texto dentro de la tarjeta que describe el contenido.&lt;/p&gt;
+
+              &lt;button class="tarjeta__boton tarjeta__boton--primario"&gt;Acción Principal&lt;/button&gt;
+              &lt;button class="tarjeta__boton tarjeta__boton--secundario"&gt;Acción Secundaria&lt;/button&gt;
+              &lt;/div&gt;</code>
+       </pre>
+
+    <h3 class="seccion__subtitulo">Código CSS de la Tarjeta usando BEM</h3>
+       <pre class="cuadro_ejemplo2">
+           <code >
+                         .mini-card {
+                                  border: 1px solid #ccc;
+                                  padding: 10px;
+                                  border-radius: 8px;
+                                  background-color: #f9f9f9;
+                                  width: 200px;
+                         }
+
+                         .mini-card__title {
+                                  font-size: 18px;
+                                  margin: 0 0 5px;
+                                  color: #333;
+                        }
+
+                        .mini-card__text {
+                                  font-size: 14px;
+                                  color: #666;
+                        }  
+           </code>
+     </pre>
+    </section>
+             </section>
+
+  </main>
+
+  <footer class="footer">
+      <p class="footer__text">Instituto de Educación Superior Tecnológico Público Argentina — Lima, Perú</p>
+      <p class="footer__text">Elavorado con fines de Práctica G.R</p>
+      <p class="footer__text">
+       Fuente:
+        <a href="https://getbem.com/introduction/" target="_blank">BEM</a> |
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">MDN JavaScript</a>
+      </p>
+    </footer>
+  </body>
+  </html>

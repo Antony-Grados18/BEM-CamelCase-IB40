@@ -1,0 +1,130 @@
+  /* esto es para  */
+   *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+     body{ 
+           background-color: #f4fbfc;
+           font-family: Arial, Helvetica, sans-serif;
+           color: #000000;
+           padding: 1rem;
+           line-height: 1.5;
+         }
+              .logo-personal,
+              .logo-instituto {
+                 width: 120px;     /* Mismo ancho para ambas imágenes */
+                 height: auto;    /* Mantiene proporción */
+              } 
+             .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f09d9d;
+            color: #000000;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           }
+              .titulo-con-logo {
+               display: inline-flex;
+               align-items: center;
+               justify-content: center;
+               gap: 20px;
+               font-size: 2rem;
+               margin: 0 auto;
+               flex-wrap: wrap; /
+              }
+        h1, h2, h3 {
+                    margin-bottom: 0.5rem;
+                   }     
+        p {
+                 margin-bottom: 1rem;
+         }
+             .main {
+                 max-width: 800px;
+                 margin: 0 auto;
+                 padding: 2rem 1rem;
+                 border-radius: 8px;                /* Bordes redondeados */
+                 box-shadow:  0 8px 24px rgba(0, 0, 0, 0.25);  /* Sombra suave */
+                  }
+             .section {
+                 margin-bottom: 3rem;
+              }
+
+            .section__title {
+                 font-size: 1.8rem;
+                 margin-bottom: 1rem;
+                 color: #910101;
+              }
+
+                  .section__subtitle {
+                       font-size: 1.4rem;
+                       margin: 1.5rem 0 1rem;
+                       color: #f11212;
+                   }
+
+                          .section__text {
+                              font-size: 1rem;
+                              color: #444;
+                           }
+                                .table {
+                                     width: 100%;
+                                     border-collapse: collapse;
+                                     margin: 1rem 0;
+                                      }
+
+                           .table th,
+                           .table td {
+                                     border: 1px solid #f0b4b4;
+                                     padding: 0.75rem;
+                                     text-align: left;
+                                     background-color: w#f0b4b4;
+                            }
+
+                           .table th {
+                                     background-color: #922a2a;
+                                     color: #e3ebde;
+                            }
+                           .section__list {
+                                   list-style: inside square;
+                                   padding-left: 1rem;
+                                   margin-bottom: 1rem;
+                            }
+
+                                        .section__list--code li {
+                                                font-family: monospace;
+                                                background-color: rgb(248, 159, 164);
+                                                padding: 0.3rem 0.5rem;
+                                                margin: 0.3rem 0;
+                                                border-radius: 4px;
+                                        }
+                         .cuadro_ejemplo1 {
+                                background-color: #444; /* plomo oscuro */
+                                color: white;
+                                padding: 20px;
+                                border-radius: 40px;
+                                overflow-x: auto;
+                                margin-bottom: 1em;
+                                font-size: 16px;
+                         }
+                        .cuadro_ejemplo2 {
+                                background-color: #444; /* plomo oscuro */
+                                color: white;
+                                padding: 20px;
+                                border-radius: 40px;
+                                overflow-x: auto;
+                                margin-bottom: 1em;
+                                text-align: left;
+                                font-size: 16px;
+                        }
+                 .codigo code {
+                        font-family: monospace;
+                        white-space: pre-wrap; /* para que se ajuste mejor */
+                 }
+
+             .footer{
+                     text-align: center;
+                     padding: 20px;
+                     background-color: #f09d9d;
+                     color: #000000;
+                     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+              }
+                
